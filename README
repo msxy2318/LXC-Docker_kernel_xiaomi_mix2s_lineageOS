@@ -1,4 +1,15 @@
-        Linux kernel release 4.x <http://kernel.org/>
+该分支用来仅用来开启小米mix2s内核的docker和LXC配置，适用于lineageOS-22.2版本。
+如果想配置小米其他使用骁龙845平台的内核，可尝试在/.github/workflows/main.yml文件中的“ name: 编译内核”下的device中修改设备代号（将polaris改成其他代号），也可以增加代号，同时编译几个内核。
+点击Actions，再点击ALL workflows下的编译内核，然后再点击右边的Run workflow开始编译。
+本工作流以https://github.com/awkoo/kernel_mi845_lineage/tree/stable/lineage-22.2/.github/workflows为编译流程基础，再参考https://github.com/tomxi1997/LXC_KernelSU_Action对内核修改的工作流，使用AI将其有机整合得来
+所以感谢这两位的付出
+[awkoo](https://github.com/awkoo/)
+[tomxi1997](https://github.com/tomxi1997/)
+
+以下是内核本身的README
+
+
+Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
 as they tell you what this is all about, explain how to install the
